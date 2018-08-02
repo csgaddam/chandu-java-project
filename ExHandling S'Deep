@@ -1,0 +1,28 @@
+package samples;
+
+public class Sample1 {
+	public static void main(String[] args)
+	{	
+		try {
+		int i=50/0;
+		try
+		{
+		String s= null;
+		System.out.println(s.length());
+		System.out.println(s.charAt(i));
+		}
+		catch(NullPointerException e)
+		{
+			System.out.print(e);
+		}
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println(e);
+		}    
+		
+		System.out.println("I'm friends with the monster");
+	}
+	}
+
+
