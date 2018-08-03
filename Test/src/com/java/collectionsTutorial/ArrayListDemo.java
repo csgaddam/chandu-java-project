@@ -3,6 +3,8 @@ package com.java.collectionsTutorial;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+
+//comment
 public class ArrayListDemo {
 	public static void main(String[] args) {
 		ArrayList l = new ArrayList();//the default arraylist,size is 10
