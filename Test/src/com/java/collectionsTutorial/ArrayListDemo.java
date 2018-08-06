@@ -21,6 +21,7 @@ public class ArrayListDemo {
 		l.add(2,"M");
 		l.add("N");
 		System.out.println(l);	//[A,10,M,null,N]
+		//System.out.println(l.size());
 	}
 
 }
