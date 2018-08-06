@@ -1,3 +1,4 @@
+package com.java.assignments;
 import java.util.Scanner;
 
 class TooYoungException extends RuntimeException {

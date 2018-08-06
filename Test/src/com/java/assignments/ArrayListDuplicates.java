@@ -1,3 +1,4 @@
+package com.java.assignments;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
@@ -14,6 +15,7 @@ public class ArrayListDuplicates {
 		l.add(9);
 		l.add(10);
 		l.add(12);
+		l.add(13);
 		ListIterator<Integer> itr = l.listIterator();
 		while(itr.hasNext()) {
 			Integer i = (Integer)itr.next();

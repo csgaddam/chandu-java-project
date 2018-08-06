@@ -1,3 +1,4 @@
+package com.java.assignments;
 class Pyramid {
 	public static void main(String[] args) {
 		int colnum = 1;
