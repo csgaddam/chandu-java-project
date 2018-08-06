@@ -15,7 +15,7 @@ class Pyramid {
 				}
 				System.out.print(k);
 			}
-			System.out.println("");
+			System.out.println(" Test");
 			colnum = colnum + 2;
 			spacecount--;
 		}
