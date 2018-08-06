@@ -16,5 +16,4 @@ public class ReversalOfArray {
 		}
 		System.out.println(c1);
 	}
-
 }
