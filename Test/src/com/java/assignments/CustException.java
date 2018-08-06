@@ -1,37 +1,34 @@
 package com.java.assignments;
+
 import java.util.Scanner;
 
 class TooYoungException extends RuntimeException {
-	
-	TooYoungException(String s){
-		super(s);
-	}
-}
-class TooOldException extends RuntimeException {
-	
 
-	TooOldException(String s){
+	TooYoungException(String s) {
 		super(s);
 	}
 }
+
+class TooOldException extends RuntimeException {
+
+	TooOldException(String s) {
+		super(s);
+	}
+}
+
 public class CustException extends RuntimeException {
-	
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		//use scanner class to take command line arguments
+		// use scanner class to take command line argument
 		int age = scan.nextInt();
 		scan.close();
-		if(age < 18) {
+		if (age < 18) {
 			throw new TooYoungException("please wait for some more time");
+		} else if (age > 60) {
+			throw new TooOldException("You are too old");
+		} else {
+			System.out.println("We are still searching");
 		}
-			else if(age > 60 ) {
-				throw new TooOldException("You are too old");
-			}
-				else {
-					System.out.println("We are still searching");
-				}
 	}
-	
 }
-			
