@@ -1,4 +1,5 @@
 package com.java.assignments;
+
 import java.util.Scanner;
 
 public class PrimeNumber {
@@ -21,5 +22,4 @@ public class PrimeNumber {
 		else
 			System.out.println("The given number is not prime");
 	}
-
 }
