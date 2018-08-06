@@ -1,4 +1,5 @@
 package com.java.assignments;
+
 import java.util.Scanner;
 
 public class MultiplicationTable {
@@ -12,7 +13,5 @@ public class MultiplicationTable {
 			System.out.println(num + "*" + i + "=" + (num * i));
 		}
 		scan.close();
-		System.out.println("Closing ");
 	}
-
 }
