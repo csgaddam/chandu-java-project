@@ -1,13 +1,22 @@
 package com.java.practice;
 
+import java.util.Scanner;
+
 public class StringDemo {
 	public static void main(String[] args) {
-		String s1 = "chandra";
-		s1.concat("sekhar");
-		System.out.println(s1);//if the string is mutable then we should get chandra sekhar as output
+		Scanner scan = new Scanner(System.in);
+		String s1 = scan.next();
+		System.out.println("Enter the second string to be concatinated:");
+		String s2 = scan.next();
+		s1.concat(s2);
+		System.out.println("The String class is immutble because the output\n"
+				+ " after concatinating the second string with first string is: " + s1);
 		StringBuffer sb = new StringBuffer(s1);
-		sb.append("sekhar");
-		System.out.println(sb);//StringBuffer is mutable so we got the output as chandrasekhar 
+		StringBuffer sb2 = new StringBuffer(s2);
+		sb.append(sb2);
+		System.out.println("The StringBuffer class is immutable because the output\n "
+				+ "after appending the second String with the First Sting is: " + sb);
+		scan.close();
 	}
 
 }
