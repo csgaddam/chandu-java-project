@@ -16,13 +16,16 @@ public class ArrayDifference{
 			if(max<a[i]) {						//check if the current number is the max number 
 				max = a[i];
 			}
+			else if(min>a[i]) {
+				min =a[i];
+			}
 		}
-		for(int i=0;i<a.length;i++) {
+		/*for(int i=0;i<a.length;i++) {
 			if(min>a[i]) {
 				min = a[i];
 				
 			}
-		}
+		}*/
 		int r = max - min;
 		System.out.println("The difference between max number and min number is "+ r);
 		
