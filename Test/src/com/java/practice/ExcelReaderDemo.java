@@ -21,7 +21,9 @@ public class ExcelReaderDemo {
 		DataFormatter dataformatter = new DataFormatter();
 		XSSFWorkbook workbook =  new XSSFWorkbook(f);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		for(Row row: sheet) {
+		int rowcount = sheet.getPhysicalNumberOfRows();
+		System.out.println(rowcount);
+		/*for(Row row: sheet) {
 			for(Cell cell: row) {
 				String cellValue = dataformatter.formatCellValue(cell);
 				System.out.print(cellValue+"  ");
@@ -29,6 +31,6 @@ public class ExcelReaderDemo {
 			System.out.println(" ");
 			System.out.println("*********************************");
 			//System.out.println(sheet.get);
-		}
+		}*/
 	}
 }
