@@ -15,32 +15,47 @@
 		<servlet-class>com.banking.servlet.CustomerDetails</servlet-class>
 	</servlet>
 
-
-
 	<servlet>
-		<servlet-name>accdetails</servlet-name>
-		<jsp-file>/fetch.jsp</jsp-file>
+		<servlet-name>insert or fetch</servlet-name>
+		<jsp-file>/insert.jsp</jsp-file>
 	</servlet>
 
+	<servlet>
+		<servlet-name>insertcustomer</servlet-name>
+		<servlet-class>com.banking.servlet.InsertServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.banking.servlet.deleteServlet</servlet-class>
+	</servlet>
 
-	<servlet-mapping>
-		<servlet-name>fetch</servlet-name>
-		<url-pattern>/servlet1</url-pattern>
-	</servlet-mapping>
-
+	<!-- mapping -->
 
 	<servlet-mapping>
 		<servlet-name>Adminlogin</servlet-name>
 		<url-pattern>/adminservlet</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>fetch</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>insert or fetch</servlet-name>
+		<url-pattern>/customerdetails</url-pattern>
+	</servlet-mapping>
 
 
 	<servlet-mapping>
-		<servlet-name>accdetails</servlet-name>
-		<url-pattern>/customerdetails</url-pattern>
+		<servlet-name>insertcustomer</servlet-name>
+		<url-pattern>/insertservlet</url-pattern>
 	</servlet-mapping>
-	
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/deleteservlet</url-pattern>
+	</servlet-mapping>
+
 	<welcome-file-list>
 		<welcome-file>login.jsp</welcome-file>
 	</welcome-file-list>
